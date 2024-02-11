@@ -4,6 +4,7 @@ scoreboard objectives add apc_r dummy ["红队所处坐标"]
 scoreboard objectives add apc_g dummy ["绿队所处坐标"]
 scoreboard objectives add apc_b dummy ["蓝队所处坐标"]
 scoreboard objectives add apc_y dummy ["黄队所处坐标"]
+scoreboard objectives add apc_temp dummy ["飞行棋临时数据"]
 # Don't want to continue play? Try apc:debug/uninstall.
 # Init gamerule
 scoreboard players set $roll_3times apc_gamerule 1

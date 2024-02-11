@@ -1,0 +1,2 @@
+execute unless entity @e[type=armor_stand,tag=apc_chess,distance=..1] positioned ^ ^ ^0.005 run function apc:process/player/ray
+execute if entity @e[type=armor_stand,tag=apc_chess,distance=..1] run function apc:process/chess/selected
