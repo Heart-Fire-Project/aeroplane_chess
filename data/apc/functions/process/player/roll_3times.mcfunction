@@ -1,0 +1,2 @@
+execute if score $roll_3times apc_gamerule matches 1 run function apc:process/player/roll_3times/return_one
+execute unless score %roll_3times apc_gamerule matches 1 if score $all_back apc_gamerule matches 1 run function apc:process/player/roll_3times/return_all

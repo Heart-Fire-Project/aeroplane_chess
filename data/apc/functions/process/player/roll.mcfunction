@@ -12,6 +12,7 @@ execute if score $step apc_temp matches 6 if entity @s[tag=apc_roll_2times] run 
 execute unless score $step apc_temp matches 6 run tellraw @a [{"translate":"apc.roll.tip","fallback":"- %s 掷出了 %s 点","with":[{"selector":"@s"},{"score":{"name":"$step","objective":"apc_temp"}}],"color":"green"}]
 execute if score $step apc_temp matches 6 if entity @s[tag=!apc_roll_2times] run tellraw @a [{"translate":"apc.roll.tip.extra","fallback":"- %s 掷出了 %s 点，额外回合","with":[{"selector":"@s"},{"score":{"name":"$step","objective":"apc_temp"}}],"color":"gold"}]
 execute if score $step apc_temp matches 6 if entity @s[tag=apc_roll_2times] run tellraw @a [{"translate":"apc.roll.tip.extra.2","fallback":"- %s 再次掷出了 %s 点，额外回合","with":[{"selector":"@s"},{"score":{"name":"$step","objective":"apc_temp"}}],"color":"gold"}]
+# 加个音效吧
 
 # Select chess
 tag @s add apc_select
